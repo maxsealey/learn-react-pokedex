@@ -1,12 +1,18 @@
 import React from 'react';
+import Pokemon from '../Pokemon/Pokemon';
+
 import './PokemonList.css';
 
-class PokemonList extends React.Component {
+export default class PokemonList extends React.Component {
     render(){
         return (
             <div>
-
-                
+                <Pokemon/>
+                <Pokemon/>
+                <Pokemon/>
+                <Pokemon/>
+                <Pokemon/>
+                <Pokemon/>
             </div>
         )
     }
