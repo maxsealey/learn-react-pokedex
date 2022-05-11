@@ -4,10 +4,13 @@ import axios from 'axios'
 import './PokemonList.css';
 
 export default class PokemonList extends React.Component {
+    constructor(props) {
+        super(props)
 
-    state = {
-        url: " https://pokeapi.co/api/v2/pokemon/",
-        pokemon: null // stores retrieved data
+        this.state = {
+            url: "https://pokeapi.co/api/v2/pokemon?limit=898&offset=0",
+            pokemon: null // stores retrieved data
+        }
     }
 
     async componentDidMount() {
@@ -21,7 +24,7 @@ export default class PokemonList extends React.Component {
                 {
                     this.state.pokemon ? 
                     (<div className = "row">
-                        {this.state.pokemon.map(poke => <Pokemon />)}
+                        {this.state.pokemon.map(poke => <Pokemon key={poke.name} name={poke.name} url={poke.url}/>)}
                     </div>) : <h1>Loading</h1>
                 }
             </React.Fragment>
