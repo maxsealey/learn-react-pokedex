@@ -6,7 +6,7 @@ export default class NavBar extends Component {
     return (
         <div>
             <nav className='navbar navbar-expand-md navbar-dark bg-dark fixed-top' 
-            style={{ height:'50px', display:'flex', justifyContent:'space-around' }}>
+            style={{ height:'50px', display:'flex', justifyContent:'space-around', position:'absolute' }}>
             <a href="#" style={{ color:'white', textDecoration:'none', margin:'15px 0px 0px 15px',cursor:'pointer' }}>
             <h5>Pokedex - Gotta Catch 'Em All!</h5></a></nav>
         </div>
