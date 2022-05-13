@@ -6,13 +6,19 @@ import '../../App.css'
 
 export default class NavBar extends Component {
   render() {
+    const navStyle = {height:'70px', display:'flex', justifyContent:'space-between', position:'absolute'}
+    const linkStyle = {color:'white', textDecoration:'none',cursor:'pointer'}
+
     return (
         <div>
             <nav className='navbar navbar-expand-md navbar-dark bg-dark fixed-top' 
-            style={{ height:'60px', display:'flex', justifyContent:'space-between', position:'absolute' }}>
-            <a href="#" style={{ color:'white', textDecoration:'none',cursor:'pointer' }}>
-            <h5 style={{margin:'auto', marginLeft:'20px'}}>Pokedex - Gotta Catch 'Em All!</h5></a><a href="#">
-            <FontAwesomeIcon icon={faMagnifyingGlass} style={{color:'white', marginRight:'20px', height:'20px',width:'20px'}}/></a></nav>
+            style={navStyle}>
+              <a href="#" style={linkStyle}>
+              <h3 style={{ margin:'auto', marginLeft:'20px' }}>Pokedex - Gotta Catch 'Em All!</h3></a>
+              <a href="#">
+                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color:'white', marginRight:'20px', height:'24px',width:'24px'}}/>
+              </a>
+            </nav>
         </div>
     )
   }

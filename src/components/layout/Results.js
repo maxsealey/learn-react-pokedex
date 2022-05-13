@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PokemonList from '../PokemonList/PokemonList'
+import PokemonList from '../PokemonList'
 
 export default class Results extends Component {
   render() {
