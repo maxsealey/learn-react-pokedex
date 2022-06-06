@@ -30,7 +30,7 @@ export default class Pokemon extends React.Component {
             <div className = "col-md-3 col-sm-6 mb-5">
                 <div className = "card" style={{minHeight:'12em',minWidth:'10em'}}>
                     <h6 className = "card-header text-center">
-                        Nat. Dex# {this.state.pokeIndex}<br/>  {this.state.name.toUpperCase()}
+                        {this.state.pokeIndex}. {this.state.name.toUpperCase()}
                     </h6>
                     <div className="card-body" style={{display:'flex', justifyContent:'space-around'}}>
                         <img src={this.state.imgUrl} alt={this.state.name} style={{height:'6em',width:'6em'}}/>
