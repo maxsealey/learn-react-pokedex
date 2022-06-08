@@ -14,7 +14,7 @@ export default class NavBar extends Component {
             <nav className='navbar navbar-expand-md navbar-dark bg-dark fixed-top' 
             style={navStyle}>
               <a href="#" style={linkStyle}>
-              <h3 style={{ margin:'auto', marginLeft:'20px' }}>Pokedex - Gotta Catch 'Em All!</h3></a>
+              <h3 style={{ margin:'auto', marginLeft:'20px',fontFamily:'Pokemon Solid' }}>Pokedex - Gotta Catch 'Em All!</h3></a>
               <a href="#">
                 <FontAwesomeIcon icon={faMagnifyingGlass} style={{color:'white', marginRight:'20px', height:'24px',width:'24px'}}/>
               </a>
