@@ -13,3 +13,13 @@ html, body {
       padding-top: 5rem;
       background-color: #ef5350 !important;
   }
+
+  .nav-icon {
+    color:white; 
+    margin-right:20px; 
+    height:24px;
+    width:24px;
+    &:hover {
+      color:darkgray;
+    }
+  }

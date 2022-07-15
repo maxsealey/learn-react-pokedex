@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import '../../App.css'
+import '../../App.scss'
 
 
 export default class NavBar extends Component {
@@ -16,7 +16,7 @@ export default class NavBar extends Component {
               <a href="#" style={linkStyle}>
               <h3 style={{ margin:'auto', marginLeft:'20px',fontFamily:'Pokemon Solid' }}>Pokedex - Gotta Catch 'Em All!</h3></a>
               <a href="#">
-                <FontAwesomeIcon icon={faMagnifyingGlass} style={{color:'white', marginRight:'20px', height:'24px',width:'24px'}}/>
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="nav-icon"/>
               </a>
             </nav>
         </div>
